@@ -1,0 +1,36 @@
+cat > 
+.gitignore << 'EOF'
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+vendor/
+.venv/
+
+# Files 
+dist/
+client/dist/
+server/dist/
+build/
+*.o
+
+# Editors and IDE
+.vscode/
+.idea/
+*.swp
+
+# Secrets 
+.env
+*.key
+*.pem
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+EOF
